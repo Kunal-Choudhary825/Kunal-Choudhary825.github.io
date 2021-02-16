@@ -15,7 +15,7 @@ before_script:
 deploy:
   provider: pages # Tells Travis we're deploying on Github Pages
   skip-cleanup: true # Make sure you have it set to true
-  github-token: 2780835f4402645024f7d946985658e8355bb28d # See notes bellow
+  github-token: $GITHUB_TOKEN # See notes bellow
   local_dir: dist # The directory to deploy
   repo: Kunal-Choudhary825/Kunal-Choudhary825.github.io # For example christopherkade/christopherkade.github.io
   target_branch: main # Branch to be deployed on
