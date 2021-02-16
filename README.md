@@ -1,7 +1,7 @@
 Kunal-Choudhary825.github.io
 ======================
 
-Github repo for Vikram Tiwari's Website
+Github repo for Kunal Patil's Website
 
 ## How to get your own?
 1. Fork the repo
