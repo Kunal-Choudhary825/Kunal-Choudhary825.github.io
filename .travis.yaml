@@ -20,6 +20,6 @@ deploy:
   repo: Kunal-Choudhary825/Kunal-Choudhary825.github.io # For example christopherkade/christopherkade.github.io
   target_branch: main # Branch to be deployed on
   on:
-    branch: code # Deployement only triggered when code is pushed on the code branch
+    branch: main # Deployement only triggered when code is pushed on the code branch
 	
 	
