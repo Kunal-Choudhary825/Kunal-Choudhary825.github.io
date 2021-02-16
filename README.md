@@ -1,4 +1,4 @@
-vikramtiwari.github.io
+Kunal-Choudhary825.github.io
 ======================
 
 Github repo for Vikram Tiwari's Website
