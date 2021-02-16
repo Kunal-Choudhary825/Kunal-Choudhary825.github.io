@@ -1,3 +1,25 @@
-language: node_js
-node_js:
-  - 7
+# Important for the Travis container set up
+language: 'node_js' # Language used by the project
+node_js: '8' # Node version used
+
+cache:
+  directories:
+    - 'node_modules' # Travis will cache node_modules so it doesn't reinstall them every time
+
+# Lifecycle job, will execute the actions bellow before the build and deployment.
+# Find other build lifecycle hooks here: https://docs.travis-ci.com/user/job-lifecycle
+before_script:
+  - npm run lint
+
+# This is where the magic happens, Travis handles Github pages deployment automatically
+deploy:
+  provider: pages # Tells Travis we're deploying on Github Pages
+  skip-cleanup: true # Make sure you have it set to true
+  github-token: 2780835f4402645024f7d946985658e8355bb28d # See notes bellow
+  local_dir: dist # The directory to deploy
+  repo: Kunal-Choudhary825/Kunal-Choudhary825.github.io # For example christopherkade/christopherkade.github.io
+  target_branch: main # Branch to be deployed on
+  on:
+    branch: code # Deployement only triggered when code is pushed on the code branch
+	
+	
